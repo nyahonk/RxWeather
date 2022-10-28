@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RxWeather</string>
+    <string name="action_history">History</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="search_fragment_label">Search Fragment</string>
+    <string name="main_fragment_label">Main Fragment</string>
+    <string name="history_fragment_label">History Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- View elements strings -->
+    <string name="fragment_search_search_hint">Enter city name here</string>
+    <string name="fragment_search_btn_search_weather">Search Weather</string>
+    <string name="fragment_main_min_temp">Max Temp</string>
+    <string name="fragment_main_max_temp">Min Temp</string>
+    <string name="fragment_main_feels_like_temp">Feels Like</string>
+</resources>

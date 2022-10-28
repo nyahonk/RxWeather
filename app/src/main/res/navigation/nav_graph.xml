@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SearchFragment">
+
+    <action android:id="@+id/action_global_historyFragment"
+        app:destination="@id/HistoryFragment"/>
+
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.nyahonk.rxweather.ui.main_screen.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_MainFragment_to_HistoryFragment"
+            app:destination="@id/HistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/HistoryFragment"
+        android:name="com.nyahonk.rxweather.ui.history_screen.HistoryFragment"
+        android:label="@string/history_fragment_label"
+        tools:layout="@layout/fragment_history">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.nyahonk.rxweather.ui.search_screen.SearchFragment"
+        android:label="@string/search_fragment_label"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_SearchFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+
+        <action
+            android:id="@+id/action_SearchFragment_to_HistoryFragment"
+            app:destination="@id/HistoryFragment" />
+
+    </fragment>
+</navigation>
